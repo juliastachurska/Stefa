@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title>Videos</title>
+    <div class="row">
+  <div class="column left">
+    <div class="menu">
+    <button onclick="myFunction()" class="dropbtn">Menu</button>
+      <div id="myMenu" class="dropdown-content">
+        <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+        <a href="kitten.html">Home</a>
+        <a href="pictures.html">Pictures</a>
+        <a href="videos.html">Videos</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+  <div class="column right">
+    <h1>Videos</h1>
+  </div>
+</div>
+</header>
+<link rel="stylesheet" type="text/css" href="rest.css">
+<body>
+  <script>
+  function myFunction() {
+      document.getElementById("myMenu").classList.toggle("show");
+  }
+  function filterFunction() {
+      var input, filter, ul, li, a, i;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      div = document.getElementById("myMenu");
+      a = div.getElementsByTagName("a");
+      for (i = 0; i < a.length; i++) {
+          if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+              a[i].style.display = "";
+          } else {
+              a[i].style.display = "none";
+          }
+      }
+  }
+  </script>
+  <center><p>We have included a variety of different genre of kitten video for your enjoyment</p>
+  <p>Enjoy!</p></center>
+<iframe width="470" height="345" src="https://www.youtube.com/embed/yH2FPSupO6c"frameborder="0" allowfullscreen>
+</iframe>
+<iframe width="470" height="345" src="https://www.youtube.com/embed/uKHAfGPMVRQ" frameborder="0" allowfullscreen>
+</iframe>
+<iframe width="470" height="345" src="https://www.youtube.com/embed/35T8wtmTbVg" frameborder="0" allowfullscreen>
+</iframe>
+<iframe width="470" height="345" src="https://www.youtube.com/embed/GomSxp98H-M" frameborder="0" allowfullscreen>
+</iframe>
+<iframe width="470" height="345" src="https://www.youtube.com/embed/9fEJdWgWFB0" frameborder="0" allowfullscreen>
+</iframe>
+<iframe width="470" height="345" src="https://www.youtube.com/embed/X87Qy1Zp-N0" frameborder="0" allowfullscreen>
+</iframe>
+<iframe width="470" height="345" src="https://www.youtube.com/embed/WP4Uh66FA3A"frameborder="0" allowfullscreen>
+</iframe>
+<iframe width="470" height="345" src="https://www.youtube.com/embed/njSyHmcEdkw"frameborder="0" allowfullscreen>
+</iframe>
+<iframe width="470" height="345" src="https://www.youtube.com/embed/wgUFfKiAJcU"frameborder="0" allowfullscreen>
+</iframe>
+<iframe width="470" height="345" src="https://www.youtube.com/embed/4IP_E7efGWE"frameborder="0" allowfullscreen>
+</iframe>
+<iframe width="470" height="345" src="https://www.youtube.com/embed/kBftA3M7Hck"frameborder="0" allowfullscreen>
+</iframe>
+<iframe width="470" height="345" src="https://www.youtube.com/embed/YGORU4s-6tY"frameborder="0" allowfullscreen>
+</iframe>
+<iframe width="470" height="345" src="https://www.youtube.com/embed/SQudKvrwDAU"frameborder="0" allowfullscreen>
+</iframe>
+<iframe width="470" height="345" src="https://www.youtube.com/embed/vEvvRfuVk30"frameborder="0" allowfullscreen>
+</iframe>
+<iframe width="470" height="345" src="https://www.youtube.com/embed/-ydZPFLcHGA"frameborder="0" allowfullscreen>
+</iframe>
+    <footer class="footer">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <a href="https://www.facebook.com/welovecatsandkittens/?hc_ref=ARTDbjuygJ2opvSI6USR4JXuzRuGgnhq3zzW2f_p0YzbrOo6mJhYL3yVHc03aK2lgHQ&fref=nf" class="fa fa-facebook"></a>
+      <a href="https://twitter.com/EmrgencyKittens" class="fa fa-twitter"></a>
+      <a href="https://www.youtube.com/user/wloltigerlolw4" class="fa fa-youtube"></a>
+      <a href="https://www.instagram.com/kittensofinstagram/" class="fa fa-instagram"></a>
+      <a href="https://www.pinterest.co.uk/natashafoote/kittens/?lp=true" class="fa fa-pinterest"></a>
+      <a href="#" class="fa fa-snapchat-ghost"></a>
+    </footer>
+</body>
+</html>

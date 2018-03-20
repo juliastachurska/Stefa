@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pictures</title>
+    <div class="menu">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    <button onclick="myFunction()" class="dropbtn">Menu</button>
+      <div id="myMenu" class="dropdown-content">
+        <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+        <a href="kitten.html">Home</a>
+        <a href="pictures.html">Pictures</a>
+        <a href="videos.html">Videos</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+</head>
+<link rel="stylesheet" type="text/css" href="rest.css">
+<body>
+  <div class="gallery">
+  <a target="_blank" href="1.jpg">
+    <img src="1.jpg" alt="Stefa 1" width="300" height="200">
+  </a>
+  <div class="desc">My name is Stefa</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="2.jpg">
+    <img src="2.jpg" alt="Stefa 2" width="600" height="400">
+  </a>
+  <div class="desc">The passport photo</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="4.jpg">
+    <img src="4.jpg" alt="Stefa 4" width="600" height="400">
+  </a>
+  <div class="desc">Manicure time!</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="5.jpg">
+    <img src="5.jpg" alt="Stefa 5" width="600" height="400">
+  </a>
+  <div class="desc">I love you!</div>
+</div>
+  </div>
+<div class="gallery">
+  <a target="_blank" href="8.jpg">
+    <img src="8.jpg" alt="Stefa 8" width="600" height="400">
+  </a>
+  <div class="desc">Just casually resting</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="9.jpg">
+    <img src="9.jpg" alt="Stefa 9" width="600" height="400">
+  </a>
+  <div class="desc">I am too sweet to be true</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="10.jpg">
+    <img src="10.jpg" alt="Stefa 10" width="600" height="400">
+  </a>
+  <div class="desc">Hello</div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+</div>
+<script>
+ function myFunction() {
+     document.getElementById("myMenu").classList.toggle("show");
+ }
+ function filterFunction() {
+     var input, filter, ul, li, a, i;
+     input = document.getElementById("myInput");
+     filter = input.value.toUpperCase();
+     div = document.getElementById("myMenu");
+     a = div.getElementsByTagName("a");
+     for (i = 0; i < a.length; i++) {
+         if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+             a[i].style.display = "";
+         } else {
+             a[i].style.display = "none";
+         }
+     }
+ }
+ </script>
+  <footer class="footer">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-youtube"></a>
+    <a href="#" class="fa fa-instagram"></a>
+    <a href="#" class="fa fa-pinterest"></a>
+    <a href="#" class="fa fa-snapchat-ghost"></a>
+  </footer>
+</body>
+</html>

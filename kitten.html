@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <head>
+    <title> Kitten Heaven </title>
+    <div class="menu">
+    <button onclick="myFunction()" class="dropbtn">Menu</button>
+      <div id="myMenu" class="dropdown-content">
+        <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+        <a href="kitten.html">Home</a>
+        <a href="pictures.html">Pictures</a>
+        <a href="videos.html">Videos</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </head>
+<link rel="stylesheet" type="text/css" href="kitten.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+  <h2>WELCOME TO</h2>
+  <center><h1>KITTEN HEAVEN</h1></center>
+  <h2>HAVE A LOOK MEW-ROUND</h2>
+  <script>
+function myFunction() {
+    document.getElementById("myMenu").classList.toggle("show");
+}
+
+function filterFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    div = document.getElementById("myMenu");
+    a = div.getElementsByTagName("a");
+    for (i = 0; i < a.length; i++) {
+        if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+        } else {
+            a[i].style.display = "none";
+        }
+    }
+}
+</script>
+    <footer class="footer">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <a href="https://www.facebook.com/welovecatsandkittens/?hc_ref=ARTDbjuygJ2opvSI6USR4JXuzRuGgnhq3zzW2f_p0YzbrOo6mJhYL3yVHc03aK2lgHQ&fref=nf" class="fa fa-facebook"></a>
+      <a href="https://twitter.com/EmrgencyKittens" class="fa fa-twitter"></a>
+      <a href="https://www.youtube.com/user/wloltigerlolw4" class="fa fa-youtube"></a>
+      <a href="https://www.instagram.com/kittensofinstagram/" class="fa fa-instagram"></a>
+      <a href="https://www.pinterest.co.uk/natashafoote/kittens/?lp=true" class="fa fa-pinterest"></a>
+      <a href="#" class="fa fa-snapchat-ghost"></a>
+    </footer>
+</body>
+</html>
